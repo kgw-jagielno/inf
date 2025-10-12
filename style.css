@@ -200,7 +200,7 @@ nav a.active {
   font-weight: 500;
 }
 
-/* --- GALERIA --- */
+
 .gallery-page {
   text-align: center;
   padding: 2rem;
@@ -227,7 +227,7 @@ nav a.active {
   text-decoration: underline;
 }
 
-/* Siatka ze zdjęciami */
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -265,6 +265,7 @@ nav a.active {
   color: #333;
   font-weight: 500;
 }
+
 
 
 
