@@ -145,4 +145,58 @@ nav a.active {
   text-decoration: underline;
 }
 
+.gallery-page {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9faf9;
+}
+
+.gallery-page h2 {
+  color: #4b7b4b;
+  margin-bottom: 1rem;
+}
+
+.fb-link {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.fb-link a {
+  color: #6ea96e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.fb-link a:hover {
+  text-decoration: underline;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+.photo-item {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 0.5rem;
+  width: 220px;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.photo-item p {
+  margin-top: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
 
