@@ -179,3 +179,12 @@ html {
   background: #fafafa;
 }
 
+.accent {
+  font-family: 'Pacifico', cursive;
+  color: #3a6b3a;
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  display: block;
+}
+
