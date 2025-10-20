@@ -202,3 +202,8 @@ html {
   max-width: 900px;
   margin: auto;
 }
+body {
+  background-color: #e8f0e8;
+  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+}
+
