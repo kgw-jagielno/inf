@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(to bottom, #d8ecd8, #f2f8f2);
@@ -13,7 +12,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 header {
   text-align: center;
   background-color: #6ea96e;
@@ -27,7 +25,6 @@ header h1 {
   font-size: 2rem;
   margin: 0;
 }
-
 
 nav ul {
   list-style: none;
@@ -49,7 +46,6 @@ nav a.active {
   text-decoration: underline;
 }
 
-
 footer {
   text-align: center;
   background-color: #6ea96e;
@@ -58,7 +54,6 @@ footer {
   font-size: 0.9rem;
 }
 
-
 main {
   flex: 1;
   display: flex;
@@ -66,7 +61,6 @@ main {
   justify-content: center;
   padding: 2rem;
 }
-
 
 aside {
   width: 25%;
@@ -84,11 +78,10 @@ aside {
   background-image: url("https://images.unsplash.com/photo-1504196606672-aef5c9cefc92");
 }
 
-
 .content {
   width: 50%;
   min-height: 300px;
-  background-color: rgba(255, 255, 255, 0.95); 
+  background-color: rgba(255, 255, 255, 0.95);
   border-radius: 1.5rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 2rem;
@@ -110,6 +103,7 @@ aside {
   color: #333;
 }
 
+/* ===== GALERIA ===== */
 
 .gallery-page {
   flex: 1;
@@ -135,7 +129,6 @@ aside {
   font-size: 1.1em;
 }
 
-
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -143,9 +136,10 @@ aside {
   justify-items: center;
 }
 
-
+/* ——— poprawiony wygląd zdjęć i podpisów ——— */
 .photo-item {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   background: #fff;
   border-radius: 16px;
   overflow: hidden;
@@ -158,42 +152,24 @@ aside {
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
-.photo-item {
-  width: 100%;
-  aspect-ratio: 4 / 3; 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .photo-item img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
-  flex: 1;
   display: block;
 }
 
 .photo-item p {
-  padding: 12px;
-  font-size: 1.05em;
+  padding: 10px 0;
+  font-size: 1em;
   color: #333;
   background: #fafafa;
-  flex-shrink: 0;
+  text-align: center;
+  font-weight: 500;
+  border-top: 1px solid #eee;
 }
 
-.photo-item p {
-  padding: 12px;
-  font-size: 1.05em;
-  color: #333;
-  background: #fafafa;
-}
-
+/* ———————————————— */
 
 .accent {
   font-family: 'Pacifico', cursive;
@@ -203,7 +179,6 @@ aside {
   text-align: center;
   display: block;
 }
-
 
 @media (max-width: 992px) {
   main {
@@ -220,4 +195,3 @@ aside {
     height: 250px;
   }
 }
-
