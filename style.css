@@ -1,11 +1,24 @@
+
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #f5f5f5;
   color: #333;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #2f4f2f;
+}
+
+.accent {
+  font-family: 'Pacifico', cursive;
+  color: #6ea96e;
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 header {
@@ -189,5 +202,3 @@ html {
   max-width: 900px;
   margin: auto;
 }
-
-
