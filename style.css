@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(to bottom, #d8ecd8, #f2f8f2);
@@ -7,6 +8,11 @@ body {
   min-height: 100vh;
   margin: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 header {
   text-align: center;
@@ -21,6 +27,7 @@ header h1 {
   font-size: 2rem;
   margin: 0;
 }
+
 
 nav ul {
   list-style: none;
@@ -42,6 +49,16 @@ nav a.active {
   text-decoration: underline;
 }
 
+
+footer {
+  text-align: center;
+  background-color: #6ea96e;
+  color: white;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+
 main {
   flex: 1;
   display: flex;
@@ -49,6 +66,7 @@ main {
   justify-content: center;
   padding: 2rem;
 }
+
 
 aside {
   width: 25%;
@@ -65,6 +83,7 @@ aside {
 .right-img {
   background-image: url("https://images.unsplash.com/photo-1504196606672-aef5c9cefc92");
 }
+
 
 .content {
   width: 50%;
@@ -89,34 +108,6 @@ aside {
   line-height: 1.6;
   font-size: 1rem;
   color: #333;
-}
-
-footer {
-  text-align: center;
-  background-color: #6ea96e;
-  color: white;
-  padding: 1rem 0;
-  font-size: 0.9rem;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-@media (max-width: 992px) {
-  main {
-    flex-direction: column;
-  }
-
-  .content {
-    width: 90%;
-    margin: 1rem 0;
-  }
-
-  aside {
-    width: 90%;
-    height: 250px;
-  }
 }
 
 
@@ -144,12 +135,14 @@ html {
   font-size: 1.1em;
 }
 
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
   justify-items: center;
 }
+
 
 .photo-item {
   text-align: center;
@@ -169,6 +162,8 @@ html {
   width: 100%;
   height: 220px;
   object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   display: block;
 }
 
@@ -179,6 +174,7 @@ html {
   background: #fafafa;
 }
 
+
 .accent {
   font-family: 'Pacifico', cursive;
   color: #3a6b3a;
@@ -187,12 +183,20 @@ html {
   text-align: center;
   display: block;
 }
-.photo-item img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+
+
+@media (max-width: 992px) {
+  main {
+    flex-direction: column;
+  }
+
+  .content {
+    width: 90%;
+    margin: 1rem 0;
+  }
+
+  aside {
+    width: 90%;
+    height: 250px;
+  }
 }
-
-
